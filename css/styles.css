@@ -30,18 +30,6 @@ nav {
 .nav-cart-btn:hover { background:#e04500; }
 .cart-count { background:#fff; color:var(--or); border-radius:50%; width:20px; height:20px; display:none; align-items:center; justify-content:center; font-family:'futura-pt','Futura',sans-serif; font-weight:700; font-size:11px; }
 .cart-count.show { display:flex; }
-.nav-right { display:flex; align-items:center; gap:12px; }
-.nav-hamburger { display:none; flex-direction:column; justify-content:center; gap:5px; background:none; border:none; cursor:pointer; padding:6px; width:36px; height:36px; }
-.nav-hamburger span { display:block; height:2px; background:#fff; border-radius:2px; transition:transform .25s, opacity .25s; transform-origin:center; }
-.nav-hamburger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
-.nav-hamburger.open span:nth-child(2) { opacity:0; }
-.nav-hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
-
-/* MOBILE MENU */
-.mobile-menu { display:none; position:sticky; top:56px; z-index:99; background:var(--dk); flex-direction:column; border-top:1px solid rgba(255,255,255,.06); overflow:hidden; max-height:0; transition:max-height .3s ease; }
-.mobile-menu.open { max-height:200px; }
-.mobile-menu a { color:rgba(255,255,255,.7); font-size:13px; font-weight:700; text-decoration:none; text-transform:uppercase; letter-spacing:.1em; padding:16px 20px; border-bottom:1px solid rgba(255,255,255,.05); transition:color .2s, background .2s; }
-.mobile-menu a:hover { color:var(--ye); background:rgba(255,255,255,.04); }
 
 /* HERO */
 .hero {
@@ -217,11 +205,8 @@ footer { background:var(--dk); padding:36px 60px; display:flex; align-items:cent
   /* NAV */
   nav { padding: 0 20px; height: 56px; }
   .nav-links { display: none; }
-  .nav-logo { font-size: 20px; }
-  .nav-logo { font-size: 16px; }
+  .nav-logo { font-size: 14px; letter-spacing: .01em; }
   .nav-cart-btn { padding: 8px 12px; font-size: 11px; }
-  .nav-hamburger { display: flex; }
-  .mobile-menu { display: flex; }
 
   /* HERO */
   .hero { padding: 60px 20px 48px; min-height: 85vh; }
