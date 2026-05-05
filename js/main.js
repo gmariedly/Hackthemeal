@@ -160,7 +160,7 @@ function renderProducts(productos) {
 // ── INIT ──────────────────────────────────────────────────
 async function init() {
   try {
-    const r = await fetch(`${SUPABASE_URL}/rest/v1/productos?select=*&order=id`, {
+    const r = await fetch(`${SUPABASE_URL}/rest/v1/products?select=*&order=id`, {
       headers: {
         'apikey': SUPABASE_KEY,
         'Authorization': `Bearer ${SUPABASE_KEY}`
