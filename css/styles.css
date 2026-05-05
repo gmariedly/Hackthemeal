@@ -205,8 +205,8 @@ footer { background:var(--dk); padding:36px 60px; display:flex; align-items:cent
   /* NAV */
   nav { padding: 0 20px; height: 56px; }
   .nav-links { display: none; }
-  .nav-logo { font-size: 14px; letter-spacing: .01em; }
-  .nav-cart-btn { padding: 8px 12px; font-size: 11px; }
+  .nav-logo { font-size: 13px; letter-spacing: 0; white-space: nowrap; }
+  .nav-cart-btn { padding: 8px 12px; font-size: 11px; white-space: nowrap; flex-shrink: 0; }
 
   /* HERO */
   .hero { padding: 60px 20px 48px; min-height: 85vh; }
