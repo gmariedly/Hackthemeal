@@ -101,6 +101,19 @@ function checkoutWhatsApp() {
   window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
+// ── MOBILE MENU ───────────────────────────────────────────
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const btn  = document.getElementById('navHamburger');
+  const open = menu.classList.toggle('open');
+  btn.classList.toggle('open', open);
+}
+
+function closeMobileMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.getElementById('navHamburger').classList.remove('open');
+}
+
 // ── TOAST ─────────────────────────────────────────────────
 let toastTimer;
 function showToast(m) {

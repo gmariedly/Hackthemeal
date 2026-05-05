@@ -46,11 +46,22 @@
     <a href="#como">Cómo funciona</a>
     <a href="#pedido">Pedir</a>
   </div>
-  <button class="nav-cart-btn" onclick="openCart()">
-    🛒 Mi pedido
-    <span class="cart-count" id="cartCount">0</span>
-  </button>
+  <div class="nav-right">
+    <button class="nav-cart-btn" onclick="openCart()">
+      🛒 Mi pedido
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <button class="nav-hamburger" id="navHamburger" onclick="toggleMobileMenu()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#menu" onclick="closeMobileMenu()">Menú</a>
+  <a href="#como" onclick="closeMobileMenu()">Cómo funciona</a>
+  <a href="#pedido" onclick="closeMobileMenu()">Pedir</a>
+</div>
 
 <section class="hero">
   <div class="hero-orb o1"></div>
