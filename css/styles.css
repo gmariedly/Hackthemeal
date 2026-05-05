@@ -211,6 +211,7 @@ footer { background:var(--dk); padding:36px 60px; display:flex; align-items:cent
   /* HERO */
   .hero { padding: 60px 20px 48px; min-height: 85vh; }
   .hero-btns { flex-direction: column; align-items: center; width: 100%; margin-bottom: 48px; }
+  .hero-btns a { display: block; width: 100%; max-width: 320px; }
   .btn-p, .btn-g { width: 100%; max-width: 320px; text-align: center; }
   .hero-stats { gap: 32px; }
   .stat-num { font-size: 40px; }
